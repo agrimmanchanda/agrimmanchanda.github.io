@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Project - Master Mind</title>
+	<meta name="description" content="Project description about Master Mind Project">
+	<meta name="author" content="Agrim Manchanda">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+w
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/base.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="images/AM.png" >
+    
+    <style>
+        .float-img{
+            float: left;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        .float-img1{
+            float: right;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        body{
+            background-color: white;
+        }
+        p{
+            color: black;
+        }
+        .download .button {
+            margin-top: 3px;
+            background: #444;
+        }
+        .download .button:hover {
+            background: #11ABB0;
+            color: #fff;
+        }
+        .download .button i {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        footer{
+            position: fixed;
+            margin-top: 10pt;
+            width: 100%;
+            height: 30rem;
+            background-color: black;
+        }
+        .header1{
+            padding: 30px;
+            text-align: center;
+            background: #11ABB0;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- About Section
+   ================================================== -->
+   <section id="project_page_master_mind">
+        <div class="header1">
+            <img src="images/master_mind_game.png" class="float-img"/>
+            <img src="images/master_mind_game.png" class="float-img1"/>
+            <h1 style="margin-right: 150pt;">Master Mind</h1>
+            <div class="new">
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Technologies:</strong> C++, Command Line</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Field:</strong> Software Engineering</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Completed:</strong> March 2018</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 20pt; margin-left: 250px; margin-right: 250px;"> <strong>Master Mind</strong> was an individual first-year deliverable as part of EE Software Engineering I module. 
+            The project was designed to introduce us to and apply our knowledge gained from weekly lab sessions, specifically dealing with data structures such as 
+            <i>hash maps, vector operation and structs</i>. The game is written purely in C++ and can run on the command line with some user input parameters to run the game algorithms.<br><br><br>
+            Unlike 2048, this assignment was less strict to specification and had a competitive nature as the fastest timed solution scored highest marks. A report was also written to explain our 
+            approach, decision decisions and evaluation of time-based performance metrics. A skeleton code was provided for a working <i>maker</i> and <i>solver</i>, albeit the latter being highly 
+            inefficient. The overall aim of the assignment was to improve these two functionalities and present a competitive code. 
+            <br><br><br>
+            In this game, the user must provide an input for length and sequence of the code to be tested. The game then generates a random sequence of numbers defined by input length with numbers 
+            ranging from <i>0...N</i>. The code solver tries to find the optimum sequence using minimum number of attempts and receives feedback on its guess. If the guess includes a number at the
+            correct position, the solver returns a black hit or if the guess includes a number at the wrong position the solver returns a white hit. By doing so, the game can eliminate large proportions
+            of all possible solutions and make a better guess as its next move is based on historic data about black/white hits. The game ends when a sequence, of length L, has been found with all L black
+            hits and no white hits. 
+            <br><br><br>
+            My key learning in this project was <i>algorithmic</i> software engineering skills. It was my first experience of a large project where I learned how to choose the best data structure, in this case hash maps, 
+            for the purpose of Max Parts algorithm. I had to independently research suitable algorithms and my report compares the performance metrics for different algorithms. This gave me a stronger understanding
+            of how a programmer has to holistically think of many solutions before deciding optimum one.  
+            <br><br><br>
+            A link to the project source code and accompanying report on GitHub can be accessed <a href="https://github.com/agrimmanchanda/Master-Mind">here</a>.
+            <br>
+            
+            <div class="download">
+                <p style="margin-top: 20pt; margin-left: 250px;">
+                <a href="index.html#portfolio" title="Back to projects" class="button">← Back to Projects</a>
+                </p>
+            </div>
+        </p>
+
+
+   </section> <!-- About Section End-->
+
+    <footer></footer>
+
+</body>

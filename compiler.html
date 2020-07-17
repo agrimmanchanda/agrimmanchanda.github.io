@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Project - C90-to-MIPS Compiler</title>
+	<meta name="description" content="Project description about C90-to-MIPS Compiler Project">
+	<meta name="author" content="Agrim Manchanda">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/base.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="images/AM.png" >
+    
+    <style>
+        .float-img{
+            float: left;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        .float-img1{
+            float: right;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        body{
+            background-color: white;
+        }
+        p{
+            color: black;
+        }
+        .download .button {
+            margin-top: 3px;
+            background: #444;
+        }
+        .download .button:hover {
+            background: #11ABB0;
+            color: #fff;
+        }
+        .download .button i {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        footer{
+            position: fixed;
+            margin-top: 10pt;
+            width: 100%;
+            height: 30rem;
+            background-color: black;
+        }
+        .header1{
+            padding: 30px;
+            text-align: center;
+            background: #11ABB0;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- About Section
+   ================================================== -->
+   <section id="project_page_mips_simulator">
+        <div class="header1">
+            <img src="images/MIPS2.jpg" class="float-img"/>
+            <img src="images/MIPS2.jpg" class="float-img1"/>
+            <h1 style="margin-right: 150pt;">C90-to-MIPS</h1>
+            <div class="new">
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Technologies:</strong> C++, Flex, Bison, Bash, Command Line</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Field:</strong> Compiler Design, Language Processing, Software Engineering</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Completed:</strong> March 2019</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 20pt; margin-left: 250px; margin-right: 250px;"> <strong>C90-to-MIPS Compiler</strong> was a second-year pair project as part of EE Language Processing module. 
+
+            This project was closely related to <a href="MIPS.html">MIPS Simulator</a> project and was an extension to the developments made from that project. However, the focus of this project was 
+            to design a much more complex and technically challenging compiler which was able to translate a given C code into its equivalent MIPS assembly. We also had to provide an automated test suite 
+            which would automate the compiler testing process and demonstrate compliance with specification requirements. We had to design a <i>lexer</i> (which accepts characters on our defined language and generates
+            tokens), <i>parser</i> (which arranges the code grammatically and generates <i>Abstract Syntax Tree (AST)</i>) and a code generator (which takes AST and generates assembly code).
+            <br><br><br>
+            <i>Compiler [Flex, Bison, C++]: </i>My role in this project was spread across all three components as I wanted exposure to new languages and key compiler design concepts. I learned how to use <i>Flex</i> to create the lexer 
+            which generated tokens every time a matching regular expression was found. Close collaboration and regular testing was necessary to ensure our designs were compliant with official C90 grammar. 
+            Similarly, I took responsibility for writing the grammar for the functions in the parser in <i>Bison</i>. Designing and visualising an ADT is a challenge so we referred to the C90 parser for inspiration, yet 
+            we simplified its design for our own understanding. However, code generation was undoubtedly the biggest challenge mainly because transforming ADT into its equivalent machine code requires manipulation 
+            of data and in-depth understanding of stack operations. Much of our code base was <i>Object Orientated</i> hence we sub-divided our code into <i>classes</i> to keep track of implemented features.
+            <br><br><br>
+            <i>Testbench [Bash]: </i>
+            Creating a comprehensive testbench was a key learning from the MIPS Simulator project. As this was an extension, I applied our learning to create an automated test suite capable of running multiple files and checking
+            against reference data. The tests for this however were longer as the check was comparing MIPS code as opposed to just simulator exit code. 
+            <br><br><br> 
+            <i>Python Translator [Python, C++]: </i>
+            One of the deliverable for this project was to create a C-to-Python translator which only supported a limited C features such as simple functions, arithmetics and if/else statements. The aim was to understand how to lex
+            C code into a simple-to-understand Python language. This was my first exposure to Python in an academic project. This was the most enjoyable part of the project as it was very self-contained. 
+            <br><br><br>
+            Compiler design is a skill that is valued highly across software engineering industry and upon reflection it was a rewarding project. It was difficult managing the project alongside other courseworks, but the skills developed 
+            were very focussed on the technical aspects of compiler design (lexing, parsing and code generation). This was even useful for my third year High Level Programming module where there was significant focus on creating our own 
+            untyped functional language. Nevertheless, I developed collaboration, communication and time management skills by working constructively with my partner. 
+            <br><br><br>
+            A link to the project source code on GitHub can be accessed <a href="https://github.com/agrimmanchanda/C90-to-MIPS-Compiler">here</a>.
+            <br>
+            
+            <div class="download">
+                <p style="margin-top: 20pt; margin-left: 250px;">
+                <a href="index.html#portfolio" title="Back to projects" class="button">← Back to Projects</a>
+                </p>
+            </div>
+        </p>
+
+
+   </section> <!-- About Section End-->
+
+    <footer></footer>
+
+</body>

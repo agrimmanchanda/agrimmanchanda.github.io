@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Project - Connect 4</title>
+	<meta name="description" content="Project description about Connect 4 Project">
+	<meta name="author" content="Agrim Manchanda">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/base.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="images/AM.png" >
+    
+    <style>
+        .float-img{
+            float: left;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        .float-img1{
+            float: right;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        body{
+            background-color: white;
+        }
+        p{
+            color: black;
+        }
+        .download .button {
+            margin-top: 3px;
+            background: #444;
+        }
+        .download .button:hover {
+            background: #11ABB0;
+            color: #fff;
+        }
+        .download .button i {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        footer{
+            position: fixed;
+            margin-top: 10pt;
+            width: 100%;
+            height: 30rem;
+            background-color: black;
+        }
+        .header1{
+            padding: 30px;
+            text-align: center;
+            background: #11ABB0;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- About Section
+   ================================================== -->
+   <section id="project_page_connect_4">
+        <div class="header1">
+            <img src="images/FPGA2.png" class="float-img"/>
+            <img src="images/FPGA2.png" class="float-img1"/>
+            <h1 style="margin-right: 150pt;">Connect 4</h1>
+            <div class="new">
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Technologies:</strong> FPGA, C, Vivado, Quartus</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Field:</strong> Computer Vision, Digital Signal Processing, Software Engineering</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Completed:</strong> May 2018</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 20pt; margin-left: 250px; margin-right: 250px;"> <strong>Connect 4</strong> was a first-year group project as part of EE Engineering & Design module. 
+            The project was designed to introduce us to a powerful electronic device called <strong>F</strong>ield <strong>P</strong>rogrammable <strong>G</strong>ate <strong>A</strong>rray (FPGA). 
+            As well as learning how the device operates and runs, we had to apply our learning within a short period of time to show how we understood the key concepts of image overlay 
+            and computer vision techniques. We were given full autonomy to research, execute and deliver the project in our groups. We evaluated our strengths and implemented the famous game 
+            <i>Connect 4</i>. We used numerous technologies including our first exposure to <i>Vivado, Quartus</i>.<br><br><br>
+            The game is played in real time using a live camera feed from a phone which is used by the FPGA to detect the position of the starting game grid and colours of the coins placed. 
+            The game has two players: the human and the FPGA, with the former starting the game by placing a coloured coin on the game grid. 
+            The FPGA logic board detects the colour of the coin placed and then communicates with the CPU to obtain the best possible next move (calculated using MiniMax). 
+            This position is displayed on the screen so that the human can play the move on behalf of the FPGA. 
+            The aim of the game is to place four coins in a line: horizontally, vertically or diagonally.
+            <br><br><br>
+            The aim of this project was to develop a smooth system that supports two-way interaction between human and FPGA. The FPGA device was the core of the project as it can perform the relevant detection algorithms and provide real-time feedback to the human player. 
+            The algorithms are dependent upon each other and so it was vital that the FPGA correctly performed the detection. The FPGA was then able to communicate with its ARM chip to run the software code to obtain its move. 
+            We mutually decided to incorporate both hardware and software algorithms in this project to demonstrate ability in understanding the communication between the two. 
+            This way the team was able to show the FPGA board's full capibility.
+            <br><br><br> 
+            I learned several transferable personal and technical skills from this project. This was a short group project which required precise planning, collaboration and deligation to achieve project objectives. Working effectively under strict deadlines
+            were some personal skills I developed in this project. Communication and leadership were shown by taking account for the testing and review phase of the project where I created a suitable test bench to run our code. We were also able to measure performance metrics.
+            The technical skills were learning how to synthesise C code in Vivado, especially creating a high-level description language understandable by FPGA logic board. We were not given lectures on Computer Vision, so this area was complete self-taught 
+            and we learned to work as a unit when tackling image overlay problems. Overall it was an excellent project to put all our year learning together and create a low latency C code able to run on hardware. 
+            <br><br><br>
+            A link to the project source code on GitHub can be accessed <a href="https://github.com/agrimmanchanda/FPGA-connect4">here</a>.
+            <br>
+            
+            <div class="download">
+                <p style="margin-top: 20pt; margin-left: 250px;">
+                <a href="index.html#portfolio" title="Back to projects" class="button">← Back to Projects</a>
+                </p>
+            </div>
+        </p>
+
+
+   </section> <!-- About Section End-->
+
+    <footer></footer>
+
+</body>

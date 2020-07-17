@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Project - 2048 Game</title>
+	<meta name="description" content="Project description about 2048 Game Project">
+	<meta name="author" content="Agrim Manchanda">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+w
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/base.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="images/AM.png" >
+    
+    <style>
+        .float-img{
+            float: left;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        .float-img1{
+            float: right;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        body{
+            background-color: white;
+        }
+        p{
+            color: black;
+        }
+        .download .button {
+            margin-top: 3px;
+            background: #444;
+        }
+        .download .button:hover {
+            background: #11ABB0;
+            color: #fff;
+        }
+        .download .button i {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        footer{
+            position: fixed;
+            margin-top: 10pt;
+            width: 100%;
+            height: 30rem;
+            background-color: black;
+        }
+        .header1{
+            padding: 30px;
+            text-align: center;
+            background: #11ABB0;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- About Section
+   ================================================== -->
+   <section id="project_page_2048">
+        <div class="header1">
+            <img src="images/2048_game.png" class="float-img"/>
+            <img src="images/2048_game.png" class="float-img1"/>
+            <h1 style="margin-right: 150pt;">2048</h1>
+            <div class="new">
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Technologies:</strong> C++, Command Line</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Field:</strong> Software Engineering</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Completed:</strong> February 2018</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 20pt; margin-left: 250px; margin-right: 250px;"> <strong>2048</strong> was an individual first-year deliverable as part of EE Software Engineering I modules. 
+            The project was designed to introduce us to and apply our knowledge gained from weekly lab sessions, specifically dealing with data structures such as 
+            <i>vectors, arrays and list</i>. The game is written purely in C++ and can run on the command line using keypads: <i>w,a,s,d</i>. <br><br><br>
+            We were provided with a full declarative specification for the functions and their <i>signatures</i>. The task was to follow the specification to implement the relevant methods
+            because the assessment was based on an automatic testbench to be run on those functions. This taught us how to break large projects into smaller, easy-to-manage chunks just like 
+            the functions that we worked on. We had to ensure our code was robust and functional in edge case scenarios. 
+            <br><br><br>
+            The game is designed in a way that the user can load a pre-configured grid as a <i>.txt</i> file. If no file is provided, the game begins with an initialised 4x4 grid with all
+            zeros and single 2 at the bottom right of the grid. Once the grid is loaded, the user can use their keypad to move the grid up, down, left and right just how the original game is
+            played. At each move, a new grid is calculated based on the move and displayed on the command line, ready for another user move. For invalid moves, there is no change to the grid
+            indicating to the user of their move. The aim of the game is to maximise a single cell score before any combinations of their move become invalid.
+            <br><br><br>
+            My key learning in this project was important software engineering skills. It was my first experience of a large project where I learned how to debug effectively. I used to draw the 
+            program flow on paper and print variable values, especially because I used many <i>for loops</i> in my program. This gave me a better grasp of key programming concepts. I also
+            used this project to understand different data structures and was able to use this knowledge for my later projects. 
+            <br><br><br>
+            A link to the project source code on GitHub can be accessed <a href="https://github.com/agrimmanchanda/2048-Game">here</a>.
+            <br>
+            
+            <div class="download">
+                <p style="margin-top: 20pt; margin-left: 250px;">
+                <a href="index.html#portfolio" title="Back to projects" class="button">← Back to Projects</a>
+                </p>
+            </div>
+        </p>
+
+
+   </section> <!-- About Section End-->
+
+    <footer></footer>
+
+</body>

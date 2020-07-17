@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Project - MIPS Simulator</title>
+	<meta name="description" content="Project description about MIPS Simulator Project">
+	<meta name="author" content="Agrim Manchanda">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/base.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="images/AM.png" >
+    
+    <style>
+        .float-img{
+            float: left;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        .float-img1{
+            float: right;
+            /* margin-top: 50pt; */
+            /* margin-right: 10px; */
+            border: solid black 1px;
+            padding: 1px;
+            height: 200px;
+        }
+        body{
+            background-color: white;
+        }
+        p{
+            color: black;
+        }
+        .download .button {
+            margin-top: 3px;
+            background: #444;
+        }
+        .download .button:hover {
+            background: #11ABB0;
+            color: #fff;
+        }
+        .download .button i {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        footer{
+            position: fixed;
+            margin-top: 10pt;
+            width: 100%;
+            height: 30rem;
+            background-color: black;
+        }
+        .header1{
+            padding: 30px;
+            text-align: center;
+            background: #11ABB0;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- About Section
+   ================================================== -->
+   <section id="project_page_mips_simulator">
+        <div class="header1">
+            <img src="images/MIPS2.jpg" class="float-img"/>
+            <img src="images/MIPS2.jpg" class="float-img1"/>
+            <h1 style="margin-right: 150pt;">MIPS Simulator</h1>
+            <div class="new">
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Technologies:</strong> C++, Bash, Command Line</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Field:</strong> Computer Architecture, Software Engineering</p>
+                <br><p style="font-size: 16px;color: white;"><strong style="font-size: 20px;">Completed:</strong> November 2018</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 20pt; margin-left: 250px; margin-right: 250px;"> <strong>MIPS Simulator</strong> was a second-year pair project as part of EE Computer Architecture II module. 
+            The project was designed to put our lesson learning into practical use by creating a CPU simulator that would execute binary files based on the MIPS assembly language rules.
+            My personal aim in the project was to solidify my understanding of software and digital design by abstracting the hardware components to create a simple software flow. All MIPS 
+            commands were supported in our simulator design. Another deliverable was to provide a testbench for the simulator to run unit tests on each command supported by our 
+            or any other simulator. My role in the project was predominantly focussed in two areas: 
+            <br><br><br>
+            <i>Designing the Instruction Set Architecture (ISA) [C++]: </i>
+            For the program to simulate the MIPS architecture, we needed to design an <i>Arithmetic Logic Unit (ALU)</i> which would perform the same operations that take place on registers. 
+            I started by researching the MIPS ISA and using the resources provided in lecture to understand the process of decoding a binary instruction (the input to our simulator). 
+            Using simple bitmasks and shifts, I designed a function to decode the binary input and extracted the relevant function codes that were required to execute the respective instructions. 
+            This step was necessary to allocate the instructions to each of the three types: <i>R, I and J.</i> 
+            Subsequently, my next task was to create a function to execute the instructions: passing the extracted data as arguments for each instruction to execute. For example, the ADD instruction manipulates three registers: register source, register target and register destination. 
+            This process was repeated for every instruction as per given specification for the project (52 instructions). 
+            <br><br><br>
+            <i>Designing the testbench [Bash]:</i>
+            One of my key learnings in this project was designing a comprehensive and reliable test bench to validate the reliability of our design. It was the most interesting aspect yet most challenging for me 
+            because I had to learn a new scripting language within a short time. Upon independent research and online tutorials, I quickly picked up the syntax of the language and found similarities with C++.
+            The bash script was able to automate the process of piping binary files into our simulator and checking the simulator output against the golden reference to determine pass/fail. This allowed us to focus 
+            on writing good quality tests to measure performance of simulators. 
+            <br><br><br> 
+            Upon reflection, this project was very challenging yet equally rewarding. I learned a scripting language in a short period of time but more importantly applying my learning from lectures in a true engineering fashion. 
+            For example, to make the ALU more robust and comprehensive, I decided to return error codes after each instruction with help of if/else loops. 
+            This flagged up any issues whilst executing instructions and significantly helped to debug as we knew exactly the type of error. This saved us great amount of time and a learning I took forward in all my future projects. 
+            Having good unit tests/testbench helps significantly to keep track and set milestones as the programmes are built. 
+            <br><br><br>
+            A link to the project source code on GitHub can be accessed <a href="https://github.com/agrimmanchanda/MIPS-Simulator">here</a>.
+            <br>
+            
+            <div class="download">
+                <p style="margin-top: 20pt; margin-left: 250px;">
+                <a href="index.html#portfolio" title="Back to projects" class="button">← Back to Projects</a>
+                </p>
+            </div>
+        </p>
+
+
+   </section> <!-- About Section End-->
+
+    <footer></footer>
+
+</body>
