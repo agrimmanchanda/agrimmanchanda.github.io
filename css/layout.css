@@ -358,7 +358,7 @@ ul#nav li.current a { color: #F06000; }
 	padding-top: 6rem;
    /* padding-bottom: 1rem; */
    padding-bottom: 0rem;
-   background-color: #ebebeb;
+   background-color: #f1f1f1;
 }
 
 #education .education-header {
@@ -529,7 +529,7 @@ ul#nav li.current a { color: #F06000; }
 #resume {
 	padding-top: 5rem;
    padding-bottom: 3rem;
-   background-color: #ebebeb;
+   background-color: #f1f1f1;
 }
 
 #resume .resume-header {
@@ -1120,7 +1120,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #curriculars{
-   color: #ebebeb;
+   color: #f1f1f1;
 }
 
 /* Reset */
